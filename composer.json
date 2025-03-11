@@ -1,0 +1,35 @@
+{
+    "name": "tian/test-laravel-package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tian\\TestLaravelPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "田玉星",
+            "email": "624239110@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tian\\TestLaravelPackage\\StudyServiceProvider"
+            ],
+            "aliases": {
+                "Study": "Tian\\TestLaravelPackage\\Facades\\Study"
+            }
+        }
+    }
+}
