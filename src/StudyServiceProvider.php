@@ -46,8 +46,32 @@ class StudyServiceProvider extends ServiceProvider
             __DIR__.'/../config/study.php' => config_path('study.php'),
         ], 'study-config');
         
+        // 发布视图文件
+        // $this->publishes([
+        //     __DIR__.'/../resources/views' => resource_path('views/vendor/study'),
+        // ], 'study-views');
+        
+        // 发布迁移文件
+        // $this->publishes([
+        //     __DIR__.'/../database/migrations' => database_path('migrations'),
+        // ], 'study-migrations');
+        
+        // 发布语言文件
+        // $this->publishes([
+        //     __DIR__.'/../resources/lang' => resource_path('lang/vendor/study'),
+        // ], 'study-lang');
+        
+
+         // 发布公共资源（如JS、CSS、图片等）
+        //  $this->publishes([
+        //     __DIR__.'/../public' => public_path('vendor/study'),
+        // ], 'study-assets');
+        
         // 如果有视图，可以加载视图
+        //Laravel 会在您扩展包的 resources/views 目录中查找视图文件
+        //用户可以使用 view('study::viewname') 语法来渲染您扩展包中的视图
         // $this->loadViewsFrom(__DIR__.'/../resources/views', 'study');
+
         
         // 如果有路由，可以加载路由
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
